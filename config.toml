@@ -1,0 +1,6 @@
+baseURL = "http://example.org/"
+languageCode = "de-at"
+title = "Renate Rittler"
+
+[params]
+  homeText = "You just made a Hugo blog from scratch."
