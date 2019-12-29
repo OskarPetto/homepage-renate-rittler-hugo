@@ -1,4 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-draft: true
+year: {{ .Date }}
+size: "160x80cm"
+categories: ["oil"]
+draft: false
 ---

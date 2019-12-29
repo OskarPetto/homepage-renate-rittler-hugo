@@ -4,3 +4,22 @@ title = "Renate Rittler"
 
 [params]
   homeText = "You just made a Hugo blog from scratch."
+
+[permalinks]
+  about = "/"
+[menu]
+  [[menu.main]]
+    name = "About"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Picture"
+    pre = "edit"
+    url = "/picture/"
+    weight = 2
+  [[menu.main]]
+    name = "Categories"
+    pre = "tag"
+    url = "/categories/"
+    weight = 3
