@@ -4,12 +4,9 @@
 
 <body>
     {{ partial "nav.html" . }}
-    <div class="container">
-        <main id="main">
-            {{ block "main" .}}
-            {{end}}
-        </main>
-    </div>
+    
+    {{ block "main" .}}
+    {{end}}
 </body>
 
 </html>

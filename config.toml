@@ -14,12 +14,12 @@ title = "Renate Rittler"
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "Picture"
+    name = "Paintings"
     pre = "edit"
-    url = "/picture/"
+    url = "/painting"
     weight = 2
   [[menu.main]]
     name = "Categories"
     pre = "tag"
-    url = "/categories/"
+    url = "/categories"
     weight = 3

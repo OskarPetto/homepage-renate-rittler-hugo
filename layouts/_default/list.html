@@ -1,9 +1,12 @@
 {{define "main"}}
-
-<h1>{{ .Title }}</h1>
-<ul>
-{{ range .Pages.ByPublishDate.Reverse }}
-    <li>{{.Title}}</li>
-{{end}}
-</ul>
+<div class="container">
+    <main id="main">
+        <h1>{{ .Title }}</h1>
+        <ul>
+            {{ range .Pages.ByPublishDate.Reverse }}
+            <li>{{.Title}}</li>
+            {{end}}
+        </ul>
+    </main>
+</div>
 {{end}}
