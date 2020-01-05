@@ -1,7 +1,8 @@
-baseURL = "http://example.org/"
+baseURL = "https://oskarpetto.github.io/homepage-renate-rittler-hugo/"
 languageCode = "en-us"
 title = "Renate Rittler"
 theme = "artist"
+relativeURLs = true
 
 [params]
     logo = "/images/logo.svg"
