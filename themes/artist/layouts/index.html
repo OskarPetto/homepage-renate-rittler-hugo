@@ -1,9 +1,9 @@
 {{define "main"}}
-<div class="row">
-        <div class="col-3">
-            <img width="100%" src="{{ .Site.Params.aboutImage | relURL }}">
+<div class="row pt-2">
+        <div class="col-sm-6">
+            <img class="float-right" src="{{ .Site.Params.aboutImage | relURL }}">
         </div>
-        <div class="col-9">
+        <div class="col-sm-6">
             <h1> {{.Title}} </h1>
             {{ .Content }}  
         </div>
