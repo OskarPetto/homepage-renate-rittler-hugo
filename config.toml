@@ -10,16 +10,16 @@ relativeURLs = true
 
 [[menu.main]]
     name = "Home"
-    url = "/"
+    url = ""
     weight = -110
 
 [[menu.main]]
     name = "Ölbilder"
-    url = "/categories/oil"
+    url = "categories/oil"
     weight = -100
 
 [[menu.main]]
     name = "Zeichnungen"
     pre = "<i class='fa fa-road'></i>"
-    url = "/categories/drawn"
+    url = "categories/drawn"
     weight = -90
