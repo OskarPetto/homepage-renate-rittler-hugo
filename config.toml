@@ -2,7 +2,7 @@ baseURL = "https://oskarpetto.github.io/homepage-renate-rittler-hugo/"
 languageCode = "en-us"
 title = "Renate Rittler"
 theme = "artist"
-canon
+
 [params]
     logo = "images/logo.svg"
     description = "Im an artist from austria"
