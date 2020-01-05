@@ -2,7 +2,7 @@
 
 <h1>{{ .Title }}</h1>
 <ul>
-    {{ range .Pages.ByPublishDate.Reverse }}
+    {{ range .Pages }}
     <li>{{.Title}}</li>
     {{end}}
 </ul>
