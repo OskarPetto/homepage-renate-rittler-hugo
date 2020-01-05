@@ -5,6 +5,7 @@ theme = "artist"
 
 [params]
     logo = "images/logo.svg"
+    aboutImage = "images/me.jpg"
     description = "Im an artist from austria"
 
 [[menu.main]]

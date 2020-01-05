@@ -9,7 +9,6 @@
       {{ range .Site.Menus.main }}
           <li>
               <a href="{{ .URL | relURL }}">
-                  {{ .Pre }}
                   <span>{{ .Name }}</span>
               </a>
           </li>
