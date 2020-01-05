@@ -2,13 +2,13 @@
 <!-- sidebar start -->
 <div class="sidebar min-vh-100 sticky-top text-center">
   
-  <img class="logo" src="{{ .Site.Params.logo}}">
+  <img class="logo" src="{{ .Site.Params.logo | relURL }}">
   <nav class="menu flex-sm-column">
     <ul>
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
           <li>
-              <a href="{{ .URL }}">
+              <a href="{{ .URL | relURL }}">
                   {{ .Pre }}
                   <span>{{ .Name }}</span>
               </a>
