@@ -1,8 +1,10 @@
 
 <!-- sidebar start -->
-<aside>
-  <nav>
-    <ul class="menu">
+<div class="sidebar min-vh-100 sticky-top text-center">
+  
+  <img class="logo" src="{{ .Site.Params.logo}}">
+  <nav class="menu flex-sm-column">
+    <ul>
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
           <li>
@@ -14,4 +16,4 @@
       {{ end }}
     </ul> 
   </nav>
-</aside>
+</div>

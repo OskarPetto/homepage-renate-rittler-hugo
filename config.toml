@@ -3,7 +3,8 @@ languageCode = "en-us"
 title = "Renate Rittler"
 theme = "artist"
 
-[[params]]
+[params]
+    logo = "/images/logo.svg"
     description = "Im an artist from austria"
 
 [[menu.main]]
