@@ -1,19 +1,17 @@
-<aside class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
-      <p class="lead">
-      {{.Site.Params.SideText}}
-      </p>
-    </div>
 
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="{{ .Site.BaseURL }}">Home</a> </li>
-        {{ range .Site.Menus.main -}}
-          <li><a href="{{.URL}}"> {{ .Name }} </a></li>
-        {{- end }}
-      </ul>
-    </nav>
-  </div>
+<!-- sidebar start -->
+<aside>
+  <nav>
+    <ul class="menu">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+          <li>
+              <a href="{{ .URL }}">
+                  {{ .Pre }}
+                  <span>{{ .Name }}</span>
+              </a>
+          </li>
+      {{ end }}
+    </ul> 
+  </nav>
 </aside>
