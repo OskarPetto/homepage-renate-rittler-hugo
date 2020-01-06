@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Renate Rittler"
 theme = "artist"
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [taxonomies]
     technique = "techniques"
 

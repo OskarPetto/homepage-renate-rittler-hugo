@@ -5,15 +5,15 @@ body {
 }
 
 .sidebar {
-    min-height: 100vh;
+    min-height: 90vh;
     position: relative;
     padding: 2em;
     text-align: center;
 }
 
 .sidebar-logo {
-    height: 180px;
-    padding-top: 4vh;
+    height: 160px;
+    padding-top: 5vh;
 }
 
 .sidebar-menu {
@@ -26,7 +26,11 @@ body {
 .sidebar h1 {
     color: white;
     align-self: flex-end;
-    font-size: 60px;
+    padding-bottom: 3vh;
+}
+
+.sidebar a {
+    color: white;
     padding-bottom: 3vh;
 }
 
@@ -38,9 +42,6 @@ body {
     padding-bottom: 1vh;
 }
 
-.sidebar a {
-    color: white;
-}
 
 
 

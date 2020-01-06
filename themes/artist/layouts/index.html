@@ -1,9 +1,6 @@
 {{define "main"}}
-<div class="row pt-2">
-        <div class="col-sm-6">
-            <img class="float-right" src="{{ .Site.Params.aboutImage | relURL }}">
-        </div>
-        <div class="col-sm-6">
+<div class="row p-2">
+        <div class="col">
             <h1> {{.Title}} </h1>
             {{ .Content }}  
         </div>
