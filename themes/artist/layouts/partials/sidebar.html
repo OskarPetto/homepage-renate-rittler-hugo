@@ -1,18 +1,23 @@
-
 <!-- sidebar start -->
-<div class="sidebar min-vh-100 sticky-top text-center">
+{{ partial "sidebar-style.html" . }}
+<aside class="sidebar">
   
-  <img class="logo" src="{{ .Site.Params.logo | relURL }}">
-  <nav class="menu flex-sm-column">
-    <ul>
-      {{ $currentPage := . }}
-      {{ range .Site.Menus.main }}
+  <img class="sidebar-logo" src="{{ .Site.Params.logo | relURL }}">
+
+    <span class="sidebar-menu">
+      <h1>{{ .Site.Params.forname }}<br>{{ .Site.Params.surname }}</h1>
+      <nav>
+        <ul>
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.main }}
           <li>
-              <a href="{{ .URL | relURL }}">
-                  <span>{{ .Name }}</span>
-              </a>
+            <a href="{{ .URL | relURL }}">
+              <h4>{{ .Name }}</h4>
+            </a>
           </li>
-      {{ end }}
-    </ul> 
-  </nav>
-</div>
+          {{ end }}
+        </ul>
+      </nav>
+    </span>
+  
+</aside>

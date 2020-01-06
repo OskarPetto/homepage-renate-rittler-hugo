@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-year: {{ .Date }}
+year: "2010"
 size: "160x80cm"
-categories: ["oil"]
-draft: false
+techniques: ["oil"]
+draft: true
 ---

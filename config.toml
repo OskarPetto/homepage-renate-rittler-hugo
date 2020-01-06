@@ -3,23 +3,33 @@ languageCode = "en-us"
 title = "Renate Rittler"
 theme = "artist"
 
+[taxonomies]
+    technique = "techniques"
+
 [params]
     logo = "images/logo.svg"
     aboutImage = "images/me.jpg"
-    description = "Im an artist from austria"
+    forname = "Renate"
+    surname = "Rittler"
 
 [[menu.main]]
-    name = "Home"
+    name = "Über mich"
     url = ""
     weight = -110
 
 [[menu.main]]
     name = "Ölbilder"
-    url = "categories/oil"
+    url = "techniques/oil"
     weight = -100
+
+[[menu.main]]
+    name = "Mischtechnik"
+    pre = "<i class='fa fa-road'></i>"
+    url = "techniques/mixed"
+    weight = -90
 
 [[menu.main]]
     name = "Zeichnungen"
     pre = "<i class='fa fa-road'></i>"
-    url = "categories/drawn"
-    weight = -90
+    url = "techniques/drawn"
+    weight = -80
