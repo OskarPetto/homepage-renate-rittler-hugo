@@ -5,9 +5,10 @@ body {
 }
 
 .sidebar {
-    min-height: 70vh;
+    min-height: 60vh;
     position: relative;
     padding: 2em;
+    text-align: right;
 }
 
 @media only screen and (min-width: 600px) {
@@ -16,13 +17,7 @@ body {
     }
 }
 
-.sidebar-logo {
-    height: 200px;
-    padding-top: 5vh;
-}
-
 .sidebar-menu {
-    text-align: right;
     position: absolute;
     bottom: 3vh;
     right: 20px;
