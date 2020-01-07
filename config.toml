@@ -11,7 +11,7 @@ unsafe= true
 
 [params]
     aboutImage = "images/me.jpg"
-    sidebarImage = "images/background2.jpg"
+    sidebarImage = "images/background.jpg"
     forname = "Renate"
     surname = "Rittler"
 
