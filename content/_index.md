@@ -1,7 +1,7 @@
 # Renate Rittler
 Hallo ich bin Renate
 
-<img class="mx-auto d-block" src="/homepage-renate-rittler-hugo/images/me.jpg">
+{{<figure src="/homepage-renate-rittler-hugo/images/me.jpg" title="Renate Rittler">}}
 
  - 1
  - 3
