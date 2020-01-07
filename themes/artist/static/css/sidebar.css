@@ -1,9 +1,4 @@
 
-
-body {
-    font-family: 'Roboto Condensed', sans-serif; 
-}
-
 .sidebar {
     min-height: 100vh;
     position: relative;
@@ -25,9 +20,7 @@ body {
 
 .sidebar h1 {
     color: white;
-    align-self: flex-end;
     padding-bottom: 3vh;
-    font-size: 4rem;
 }
 
 .sidebar a {
