@@ -10,8 +10,8 @@ unsafe= true
     technique = "techniques"
 
 [params]
-    logo = "images/logo.svg"
     aboutImage = "images/me.jpg"
+    sidebarImage = "images/background.jpg"
     forname = "Renate"
     surname = "Rittler"
 
