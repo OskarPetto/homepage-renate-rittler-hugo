@@ -3,6 +3,7 @@
 <ul>
     {{ range .Pages }}
     <li>{{.Params.size}}</li>
+    <img src="{{.Params.image | relURL}}" alt="">
     {{end}}
 </ul>
 
