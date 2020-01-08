@@ -8,6 +8,7 @@ theme = "artist"
 
 [params]
     aboutImage = "images/me.jpg"
+    bannerImage = "images/banner2.jpg"
     sidebarImage = "images/background.jpg"
     forname = "Renate"
     surname = "Rittler"

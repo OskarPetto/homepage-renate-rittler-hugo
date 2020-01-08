@@ -1,4 +1,18 @@
 {{define "main"}}
-{{ .Content }}
+<div class="row py-3">
+    <img class="img-fluid" src="{{.Site.Params.bannerImage}}" 
+    alt="Renate Rittler mit Pinsel in der Hand"
+    title="Renate Rittler mit Pinsel in der Hand">
+</div>
+<div class="row py-3 justify-content-lg-center">
+    <div class="col-lg-6">
+        {{ .Content }}
+    </div>
+    <div class="col-lg-6 px-0">
+        <img class="img-fluid" src="{{.Site.Params.aboutImage}}" 
+        alt="Renate Rittler Portrait"
+        title="Renate Rittler Portrait">
+    </div>
+</div>
 {{end}}
 
