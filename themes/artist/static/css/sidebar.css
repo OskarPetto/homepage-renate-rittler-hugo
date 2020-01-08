@@ -6,12 +6,6 @@
     text-align: right;
 }
 
-@media only screen and (max-width: 576px) {
-    .sidebar {
-        min-height: 80vh;
-    }
-}
-
 .sidebar-menu {
     position: absolute;
     bottom: 8vh;
