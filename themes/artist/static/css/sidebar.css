@@ -8,7 +8,7 @@
 
 @media only screen and (max-width: 576px) {
     .sidebar {
-        min-height: 75vh;
+        min-height: 80vh;
     }
 }
 
