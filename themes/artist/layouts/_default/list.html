@@ -3,7 +3,8 @@
 <ul>
     {{ range .Pages }}
     <li>{{.Params.size}}</li>
-    <img src="{{.Params.image}}" alt="">
+    {{ $image := .Resources.GetMatch .Params.image}}
+    <img src="{{ $image.RelPermalink }}" alt="">
     {{end}}
 </ul>
 
