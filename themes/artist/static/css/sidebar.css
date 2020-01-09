@@ -8,7 +8,7 @@
 
 .sidebar-menu {
     position: absolute;
-    bottom: 8vh;
+    bottom: 8%;
     right: 20px;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */

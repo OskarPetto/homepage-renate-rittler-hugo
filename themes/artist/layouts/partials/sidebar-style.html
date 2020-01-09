@@ -8,8 +8,7 @@
 <script>
   // For smooth scrolling on mobile because 100vh is not constant 
   if (window.innerWidth < 576) {
-    const viewportHeight = window.innerHeight();
+    const viewportHeight = $('.sidebar').innerHeight();
     $('.sidebar').css({ 'min-height': viewportHeight * 0.8});
-    $('.sidebar-menu').css({ bottom: viewportHeight * 0.1});
   }
 </script>
