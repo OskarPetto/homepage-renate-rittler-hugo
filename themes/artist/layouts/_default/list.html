@@ -5,7 +5,7 @@
     <div class="card">
         <a href="#" class="modal-link">
             {{ $image := .Resources.GetMatch .Params.image}}
-            {{ $resizedImage := $image.Resize "350x" }}
+            {{ $resizedImage := $image.Resize "400x" }}
             <img class="preview-image card-img img-fluid" src="{{ $resizedImage.RelPermalink }}" alt="{{.Title}}"  title="{{.Title}}">
         </a>
     </div>
