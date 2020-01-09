@@ -2,9 +2,10 @@
 
 <ul>
     {{ range .Pages }}
-    <li>{{.Params.size}}</li>
+    <li>{{.Title}}</li>
     {{ $image := .Resources.GetMatch .Params.image}}
-    <img src="{{ $image.RelPermalink }}" alt="">
+    {{ $resizedImage := $image.Resize "300x" }}
+    <img src="{{ $resizedImage.RelPermalink }}" alt="">
     {{end}}
 </ul>
 

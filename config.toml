@@ -3,9 +3,6 @@ languageCode = "en-us"
 title = "Renate Rittler"
 theme = "artist"
 
-[taxonomies]
-    technique = "techniques"
-
 [params]
     aboutImage = "images/me.jpg"
     bannerImage = "images/banner2.jpg"
@@ -20,17 +17,17 @@ theme = "artist"
 
 [[menu.main]]
     name = "Ölbilder"
-    url = "techniques/oil"
+    url = "oil"
     weight = -100
 
 [[menu.main]]
     name = "Mischtechnik"
     pre = "<i class='fa fa-road'></i>"
-    url = "techniques/mixed"
+    url = "mixed"
     weight = -90
 
 [[menu.main]]
     name = "Zeichnungen"
     pre = "<i class='fa fa-road'></i>"
-    url = "techniques/drawn"
+    url = "drawn"
     weight = -80
