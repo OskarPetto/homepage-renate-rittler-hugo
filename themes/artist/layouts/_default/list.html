@@ -1,12 +1,13 @@
 {{define "main"}}
 
-<ul>
+<div class="card-columns pt-3">
     {{ range .Pages }}
-    <li>{{.Title}}</li>
-    {{ $image := .Resources.GetMatch .Params.image}}
-    {{ $resizedImage := $image.Resize "300x" }}
-    <img src="{{ $resizedImage.RelPermalink }}" alt="">
+    <div class="card">
+        {{ $image := .Resources.GetMatch .Params.image}}
+        {{ $resizedImage := $image.Resize "350x" }}
+        <img class="card-img img-fluid" src="{{ $resizedImage.RelPermalink }}" alt="{{.Title}}"  title="{{.Title}}">
+    </div>
     {{end}}
-</ul>
+</div>
 
 {{end}}

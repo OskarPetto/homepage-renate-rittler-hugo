@@ -1,7 +1,9 @@
 
 .sidebar {
     min-height: 100vh;
-    position: relative;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
     padding: 2em;
     text-align: right;
 }
@@ -17,6 +19,7 @@
             animation: fadein 2s;
 }
 
+/* For smooth scrolling on mobile because bottom is not constant */
 @media (max-device-width: 576px) { 
     .sidebar-menu {
         top: 110px;
