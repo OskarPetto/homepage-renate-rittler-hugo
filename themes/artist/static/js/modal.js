@@ -22,13 +22,11 @@ function setImageSrc(e) {
     image.removeAttr('data-src');
 }
 
-// scale modal on show
 $("#imageModal").on('show.bs.modal', function (e) {
     
     setImageSrc(e);
   })
 
-// scale modal on next or prev click
 $("#imageCarousel").on('slid.bs.carousel', function (e) {
     
     setImageSrc(e);
