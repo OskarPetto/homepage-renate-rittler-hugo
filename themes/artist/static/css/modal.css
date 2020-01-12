@@ -2,3 +2,10 @@
 .carousel-image {
     width: 100%;
 }
+
+.modal-dialog {
+    justify-content: center;
+}
+
+.carousel .carousel-control-prev, .carousel .carousel-control-next { visibility: hidden; }
+.carousel:hover .carousel-control-prev, .carousel:hover .carousel-control-next { visibility: visible; }

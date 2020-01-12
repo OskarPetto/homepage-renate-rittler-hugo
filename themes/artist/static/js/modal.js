@@ -5,7 +5,7 @@ function scaleModalToImage() {
     const ratio = image.naturalWidth / image.naturalHeight;
 
     // for modal footer
-    const maxModalHeight = window.innerHeight - 190;
+    const maxModalHeight = window.innerHeight - 220;
 
     const maxHeight = Math.min(image.naturalHeight, maxModalHeight);
 
