@@ -1,12 +1,12 @@
 {{define "main"}}
 
-<div id="gallery" class="card-columns pt-3" data-toggle="modal" data-target="#exampleModal"> 
+<div id="gallery" class="card-columns pt-3" data-toggle="modal" data-target="#imageModal"> 
     {{ $i := 0 }}
     {{ range .Pages }}
     <div class="card">
         {{ $image := .Resources.GetMatch .Params.image}}
         {{ $resizedImage := $image.Resize "400x" }}
-        <img class="card-img img-fluid" src="{{ $resizedImage.RelPermalink }}" alt="{{.Title}}"    title="{{.Title}}" data-target=”#carouselExample” data-slide-to="{{$i}}" >
+        <img class="card-img img-fluid" src="{{ $resizedImage.RelPermalink }}" alt="{{.Title}}"    title="{{.Title}}" data-target="#imageCarousel" data-slide-to="{{$i}}" >
     </div>
     {{ $i = add $i 1 }}
     {{end}}
