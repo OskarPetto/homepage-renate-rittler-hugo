@@ -5,14 +5,3 @@
 .modal-dialog {
     justify-content: center;
 }
-
-@media (min-width: 577px) {
-    .carousel .carousel-control-prev, .carousel .carousel-control-next {
-        visibility: hidden;
-    }
-}
-@media (min-width: 577px) {
-    .carousel:hover .carousel-control-prev, .carousel:hover .carousel-control-next {
-        visibility: visible;
-    }
-}

@@ -1,7 +1,7 @@
 
 function scaleModalToImage() {
 
-    if (window.innerWidth < 576) {
+    if (window.innerWidth < 1200) {
         return;
     }
     
