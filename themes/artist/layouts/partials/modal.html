@@ -9,7 +9,7 @@
             <div class="modal-body">
                 <!-- Carousel markup goes in the modal body -->
 
-                <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+                <div id="imageCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                     <div class="carousel-inner">
                         {{ $i := 0 }}
                         {{ range .Pages }}
@@ -22,8 +22,12 @@
                                 {{ $image := .Resources.GetMatch .Params.image}}
                                 <img class="d-block w-100" src="{{ $image.RelPermalink }}" alt="{{.Title}}"
                                     title="{{.Title}}">
+                            <div class="carousel-caption">
+                                <h3 class="h3-responsive">{{.Title}}</h3>
+                                <p>{{.Type}}, {{.Params.size}}, {{.Params.year}}</p>
+                                </div>
                             </div>
-                            {{end}}
+                        {{end}}
                         </div>
                         <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
