@@ -1,6 +1,6 @@
-$("#imageModal").on('show.bs.modal', function (e) {
-    
-    const image = $(this).find(".active").find("img")[0];
+
+function scaleModalToImage() {
+    const image = $("#imageModal").find(".active").find("img")[0];
 
     const ratio = image.naturalWidth / image.naturalHeight;
 
@@ -12,6 +12,17 @@ $("#imageModal").on('show.bs.modal', function (e) {
     // for padding in modal
     const maxWidth = maxHeight * ratio + 34; 
 
-    $(this).find(".modal-dialog").css({ "max-width": maxWidth});
+    $("#imageModal").find(".modal-dialog").css({ "max-width": maxWidth});
+}
 
+// scale modal on show
+$("#imageModal").on('show.bs.modal', function (e) {
+    
+    scaleModalToImage();
   })
+
+// scale modal on next or prev click
+$("#imageCarousel").on('slid.bs.carousel', function (e) {
+    
+    scaleModalToImage();
+})
