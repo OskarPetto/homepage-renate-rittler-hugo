@@ -3,5 +3,5 @@
 }
 
 .modal-dialog {
-    justify-content: center;
+    max-width: 700px;
 }
