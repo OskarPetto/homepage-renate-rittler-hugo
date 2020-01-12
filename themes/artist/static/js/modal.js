@@ -1,5 +1,10 @@
 
 function scaleModalToImage() {
+
+    if (window.innerWidth < 576) {
+        return;
+    }
+    
     const image = $("#imageModal").find(".active").find("img")[0];
 
     const ratio = image.naturalWidth / image.naturalHeight;
