@@ -1,19 +1,21 @@
 {{define "main"}}
 <div class="container px-0">
-    <div id="gallery" class="card-columns pt-3" data-toggle="modal" data-target="#imageModal"> 
+    <div id="gallery" class="card-columns pt-3">
         {{ $i := 0 }}
         {{ range .Pages }}
-        <div class="card ">
+        <div class="card">
             {{ $image := .Resources.GetMatch .Params.image}}
             {{ $resizedImage := $image.Resize "400x" }}
-            <img class="card-img img-fluid" src="{{ $resizedImage.RelPermalink }}" alt="{{.Title}}"    title="{{.Title}}" data-target="#imageCarousel" data-slide-to="{{$i}}" >
+            <img class="card-img img-fluid" src="{{ $resizedImage.RelPermalink }}" data-src="{{ $image.RelPermalink }}"
+                alt="{{.Title}}" title="{{.Title}}" onclick="showModal(this)">
             <div class="card-footer">
-                <h3 class="h3-responsive">{{.Title}}</h3>
-                <p>{{.Params.year}}, {{.Params.technique}}, {{.Params.size}}</p>
+                <h4 class="painting-title">{{.Title}}</h4>
+                <p class="painting-info">{{.Params.year}} &middot; {{.Params.technique}} &middot; {{.Params.size}}</p>
             </div>
         </div>
-        {{ $i = add $i 1 }}
-        {{end}}
+        
+    {{ $i = add $i 1 }}
+    {{end}}
     </div>
 </div>
 {{ partial "modal.html" . }}

@@ -1,31 +1,35 @@
 
-function scaleModalToImage() {
-    
-    const image = $("#imageModal").find(".active").find("img")[0];
+function scaleModalTo(width, height) {
 
-    const ratio = image.naturalWidth / image.naturalHeight;
+    const ratio = width / height;
 
     // for modal header and footer
-    const maxModalHeight = window.innerHeight - 210;
+    const maxModalHeight = window.innerHeight - 190;
 
-    const maxHeight = Math.min(image.naturalHeight, maxModalHeight);
+    const maxHeight = Math.min(height, maxModalHeight);
 
     // for padding in modal
-    const maxWidth = Math.min(window.innerWidth - 34,  maxHeight * ratio + 34); 
+    const maxWidth = Math.min(window.innerWidth - 20,  maxHeight * ratio + 40); 
 
-    $("#imageModal").find(".modal-dialog").css({ "max-width": maxWidth});
+    $("#image-modal").find(".modal-dialog").css({ "max-width": maxWidth});
+
 }
 
-function lazyLoadImage(e) {
-    let image = $("#imageModal").find(".active").find("img");
-    image.attr('src', image.attr('data-src'));
-    image.removeAttr('data-src');
+function showModal(image) {
+
+    if (window.innerWidth < 1200) {
+        return;
+    }
+
+    const modalImage = $("#modal-image");
+    modalImage.attr('src', $(image).attr('data-src'));
+
+    modalImage.one( "load", () => scaleModalTo($(modalImage).prop('naturalWidth'), $(modalImage).prop('naturalHeight')));
+
+    const card = $(image).parent();
+
+    $("#painting-title").text(card.find(".painting-title").text());
+    $("#painting-info").text(card.find(".painting-info").text());
+
+    $('#image-modal').modal('show')
 }
-
-$("#imageModal").on('show.bs.modal', function (e) {
-    lazyLoadImage(e);
-  })
-
-$("#imageCarousel").on('slid.bs.carousel', function (e) {
-    lazyLoadImage(e);
-})
