@@ -1,21 +1,35 @@
 {{define "main"}}
-<div class="row py-3">
-    <div class="col ">
-        <img class="img-fluid" src="{{.Site.Params.bannerImage}}" 
-        alt="Renate Rittler mit Pinsel in der Hand"
-        title="Renate Rittler mit Pinsel in der Hand">
+<div class="container">
+
+    <div class="row py-3">
+        <div class="col ">
+            <img class="img-fluid" src="{{.Site.Params.bannerImage}}" alt="Renate Rittler mit Pinsel in der Hand"
+                title="Renate Rittler mit Pinsel in der Hand">
+        </div>
+    </div>
+    <div class="row py-3 justify-content-lg-center text-center">
+        <div class="col-lg-4">
+            <div class="about-me">
+                <h1>{{ .Site.Params.forname }}<br>{{ .Site.Params.surname }}</h1>
+                <div class="my-text">
+                    {{ .Content }}
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            <img class="img-fluid" src="{{.Site.Params.aboutImage}}" alt="Renate Rittler Portrait"
+                title="Renate Rittler Portrait">
+        </div>
+    </div>
+    <div class="row py-3">
+        <div class="col my-text">
+            <h4>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </h4>
+        </div>
     </div>
 </div>
-<div class="row py-3 justify-content-lg-center text-center">
-        <div class="col-lg-6">
-            {{ .Content }}
-        </div>
-        <div class="col-lg-6 px-0">
-            <img class="img-fluid" src="{{.Site.Params.aboutImage}}" 
-            alt="Renate Rittler Portrait"
-            title="Renate Rittler Portrait">
-        </div>
-    </div>
-
 {{end}}
-
