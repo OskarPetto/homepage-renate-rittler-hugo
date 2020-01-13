@@ -4,12 +4,12 @@ function scaleModalTo(width, height) {
     const ratio = width / height;
 
     // for modal header and footer
-    const maxModalHeight = window.innerHeight - 190;
+    const maxModalHeight = window.innerHeight - 230;
 
     const maxHeight = Math.min(height, maxModalHeight);
 
     // for padding in modal
-    const maxWidth = Math.min(window.innerWidth - 20,  maxHeight * ratio + 40); 
+    const maxWidth = Math.min(window.innerWidth,  maxHeight * ratio + 40); 
 
     $("#image-modal").find(".modal-dialog").css({ "max-width": maxWidth});
 
