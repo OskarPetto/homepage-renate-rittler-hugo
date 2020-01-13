@@ -1,4 +1,7 @@
 
+.card-footer {
+    background-color: white;
+}
 
 .card-columns {
     column-count: 1;

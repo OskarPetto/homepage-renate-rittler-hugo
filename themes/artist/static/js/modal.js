@@ -16,18 +16,16 @@ function scaleModalToImage() {
     $("#imageModal").find(".modal-dialog").css({ "max-width": maxWidth});
 }
 
-function setImageSrc(e) {
-    let image = $(e.relatedTarget).find('img[data-src]');
-    image.attr('src', image.data('src'));
+function lazyLoadImage(e) {
+    let image = $("#imageModal").find(".active").find("img");
+    image.attr('src', image.attr('data-src'));
     image.removeAttr('data-src');
 }
 
 $("#imageModal").on('show.bs.modal', function (e) {
-    
-    setImageSrc(e);
+    lazyLoadImage(e);
   })
 
 $("#imageCarousel").on('slid.bs.carousel', function (e) {
-    
-    setImageSrc(e);
+    lazyLoadImage(e);
 })

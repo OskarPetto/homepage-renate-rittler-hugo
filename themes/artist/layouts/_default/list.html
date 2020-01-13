@@ -3,7 +3,7 @@
 <div id="gallery" class="card-columns pt-3" data-toggle="modal" data-target="#imageModal"> 
     {{ $i := 0 }}
     {{ range .Pages }}
-    <div class="card">
+    <div class="card ">
         {{ $image := .Resources.GetMatch .Params.image}}
         {{ $resizedImage := $image.Resize "400x" }}
         <img class="card-img img-fluid" src="{{ $resizedImage.RelPermalink }}" alt="{{.Title}}"    title="{{.Title}}" data-target="#imageCarousel" data-slide-to="{{$i}}" >
