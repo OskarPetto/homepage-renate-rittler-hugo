@@ -1,4 +1,8 @@
 
+.gallery {
+    padding: 1rem;
+}
+
 @media (max-width: 576px) { 
 
     .gallery {
@@ -14,15 +18,17 @@
 
 .card-columns {
     column-count: 1;
+    max-width: 1800px;
+    margin: auto;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     .card-columns {
         column-count: 2;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
     .card-columns {
         column-count: 3;
     }

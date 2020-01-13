@@ -1,11 +1,10 @@
 {{define "main"}}
-<div class="container gallery">
-    <div class="card-columns pt-3">
+<div class="card-columns gallery">
         {{ $i := 0 }}
         {{ range .Pages }}
         <div class="card">
             {{ $image := .Resources.GetMatch .Params.image}}
-            {{ $resizedImage := $image.Resize "400x" }}
+            {{ $resizedImage := $image.Resize "600x" }}
             <img class="card-img img-fluid" src="{{ $resizedImage.RelPermalink }}" data-src="{{ $image.RelPermalink }}"
                 alt="{{.Title}}" title="{{.Title}}" onclick="showModal(this)">
             <div class="card-footer">
@@ -17,6 +16,5 @@
     {{ $i = add $i 1 }}
     {{end}}
     </div>
-</div>
 {{ partial "modal.html" . }}
 {{end}}
