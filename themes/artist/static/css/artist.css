@@ -99,6 +99,7 @@ h1 {
 
 #gallery {
     padding: 1rem;
+    background-color: #F8F8F8;
 }
 
 @media (max-width: 576px) { 
