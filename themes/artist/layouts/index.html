@@ -13,19 +13,19 @@
 
         </div>
         <div class="col-lg-5">
-            <img class="img-fluid" src="{{.Site.Params.aboutImage}}" alt="Renate Rittler Portrait"
+            <img width="350px" src="{{.Site.Params.aboutImage}}" alt="Renate Rittler Portrait"
                 title="Renate Rittler Portrait">
         </div>
     </div>
-    <div class="row py-3">
-        <div class="col my-text">
+    <div class="row py-3 justify-content-lg-center">
+        <div class="col-lg-10 my-text">
             <h4>
                 {{ with .Site.GetPage "quote" }}{{ .Content }}{{ end }}
             </h4>
         </div>
     </div>
-    <div class="row py-3 justify-content-center">
-        <div class="col">
+    <div class="row py-3 justify-content-lg-center">
+        <div class="col-lg-10">
             <img class="img-fluid" src="{{.Site.Params.bannerImage}}" alt="Renate Rittler mit Pinsel in der Hand"
                 title="Renate Rittler mit Pinsel in der Hand">
         </div>
