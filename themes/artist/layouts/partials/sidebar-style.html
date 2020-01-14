@@ -3,14 +3,23 @@
   .sidebar {
     width: 100vw;
     background: url("{{ .Site.Params.sidebarImageMobile | relURL }}");
+    height: 100vh;
+    top: 0;
+    background-size: cover;
+    text-align: right;
   }
 
-  @media (min-device-width: 768px) {
+  @media (min-device-width: 576px) {
     .sidebar {
       width: 300px;      
       position: sticky;
       position: -webkit-sticky;
+      float: left;
       background: url("{{ .Site.Params.sidebarImage1080p | relURL }}");
+    }
+
+    #main {
+      padding-left: 300px;
     }
   }
 
@@ -19,7 +28,12 @@
       width: 400px;
       position: sticky;
       position: -webkit-sticky;
+      float: left;
       background: url("{{ .Site.Params.sidebarImage1440p | relURL }}");
+    }
+
+    #main {
+      padding-left: 400px;
     }
   }
 
@@ -28,7 +42,12 @@
       width: 600px;
       position: sticky;
       position: -webkit-sticky;
+      float: left;
       background: url("{{ .Site.Params.sidebarImage2160p | relURL }}");
+    }
+
+    #main {
+      padding-left: 600px;
     }
   }
 </style>

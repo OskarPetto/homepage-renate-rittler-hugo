@@ -12,15 +12,7 @@ h1 {
     padding-bottom: 1rem;
 }
 
-/* Sidebar */
-
-.sidebar {
-    height: 100vh;
-    top: 0;
-    background-size: cover;
-    padding: 2em;
-    text-align: right;
-}
+/* sidebar-menu */
 
 .sidebar-menu {
     position: absolute;
@@ -117,17 +109,17 @@ h1 {
 
 #gallery .card-columns {
     column-count: 1;
-    max-width: 1578px;
+    max-width: 1546px;
     margin: auto;
 }
 
-@media (min-width: 820px) {
+@media (min-width: 836px) {
     #gallery .card-columns {
         column-count: 2;
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1358px) {
     #gallery .card-columns {
         column-count: 3;
     }

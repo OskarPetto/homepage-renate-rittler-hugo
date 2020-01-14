@@ -1,21 +1,29 @@
 {{define "main"}}
-<div id="gallery">
-    <div class="card-columns">
-        {{ $i := 0 }}
-        {{ range .Pages }}
-        <div class="card shadow-sm">
-            {{ $image := .Resources.GetMatch .Params.image}}
-            {{ $resizedImage := $image.Resize "500x" }}
-            <img class="card-img img-fluid" src="{{ $resizedImage.RelPermalink }}" data-src="{{ $image.RelPermalink }}"
-                alt="{{.Title}}" title="{{.Title}}" onclick="showModal(this)">
-            <div class="card-footer">
-                <h4 class="painting-title">{{.Title}}</h4>
-                <p class="painting-info">{{.Params.year}} &middot; {{.Params.technique}} &middot; {{.Params.size}}</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col px-0">
+            <div id="gallery">
+                <div class="card-columns">
+                    {{ $i := 0 }}
+                    {{ range .Pages }}
+                    <div class="card shadow-sm">
+                        {{ $image := .Resources.GetMatch .Params.image}}
+                        {{ $resizedImage := $image.Resize "500x" }}
+                        <img class="card-img img-fluid" src="{{ $resizedImage.RelPermalink }}"
+                            data-src="{{ $image.RelPermalink }}" alt="{{.Title}}" title="{{.Title}}"
+                            onclick="showModal(this)">
+                        <div class="card-footer">
+                            <h4 class="painting-title">{{.Title}}</h4>
+                            <p class="painting-info">{{.Params.year}} &middot; {{.Params.technique}} &middot;
+                                {{.Params.size}}</p>
+                        </div>
+                    </div>
+
+                    {{ $i = add $i 1 }}
+                    {{end}}
+                </div>
             </div>
         </div>
-        
-    {{ $i = add $i 1 }}
-    {{end}}
     </div>
 </div>
 {{ partial "modal.html" . }}

@@ -3,16 +3,11 @@
 {{ partial "head.html" . }}
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            {{ partial "sidebar.html" . }}
-            <div class="col px-0">
-                <main id="main">
-                    {{ block "main" .}}
-                    {{end}}
-                </main>
-            </div>
-        </div>
+    {{ partial "sidebar.html" . }}
+    <main id="main">
+        {{ block "main" .}}
+        {{end}}
+    </main>
     </div>
     <script src="{{"js/sidebar.js" | relURL }}"></script>
 </body>
