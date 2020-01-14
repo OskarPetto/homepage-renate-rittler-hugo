@@ -1,20 +1,20 @@
 <!-- sidebar start -->
 <header class="sidebar">
 
-  <span class="sidebar-menu">
-    <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Params.forname }}<br>{{ .Site.Params.surname }}</h1></a>
-    <nav>
-      <ul>
-        {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-        <li>
-          <a href="{{ .URL | relURL }}">
-            <h4>{{ .Name }}</h4>
-          </a>
-        </li>
-        {{ end }}
-      </ul>
-    </nav>
-  </span>
-</header>
-{{ partial "sidebar-style.html" . }}
+    <span class="sidebar-menu">
+      <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Params.forname }}<br>{{ .Site.Params.surname }}</h1></a>
+      <nav>
+        <ul>
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.main }}
+          <li>
+            <a href="{{ .URL | relURL }}">
+              <h4>{{ .Name }}</h4>
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </nav>
+    </span>
+  </header>
+{{ partial "sidebar-background.html" . }}

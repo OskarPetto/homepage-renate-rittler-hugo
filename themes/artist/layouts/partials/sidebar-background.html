@@ -1,0 +1,34 @@
+<style>
+  /* To enable hugo templates */
+  .sidebar {
+    width: 100vw;
+    background: url("{{ .Site.Params.sidebarImageMobile | relURL }}");
+  }
+
+  @media (min-device-width: 768px) {
+    .sidebar {
+      width: 300px;      
+      position: sticky;
+      position: -webkit-sticky;
+      background: url("{{ .Site.Params.sidebarImage1080p | relURL }}");
+    }
+  }
+
+  @media (min-device-width: 2560px) {
+    .sidebar {
+      width: 400px;
+      position: sticky;
+      position: -webkit-sticky;
+      background: url("{{ .Site.Params.sidebarImage1440p | relURL }}");
+    }
+  }
+
+  @media (min-device-width: 3840px) {
+    .sidebar {
+      width: 600px;
+      position: sticky;
+      position: -webkit-sticky;
+      background: url("{{ .Site.Params.sidebarImage2160p | relURL }}");
+    }
+  }
+</style>

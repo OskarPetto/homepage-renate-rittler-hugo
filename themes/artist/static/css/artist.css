@@ -15,10 +15,9 @@ h1 {
 /* Sidebar */
 
 .sidebar {
-    min-height: 100vh;
-    position: sticky;
-    position: -webkit-sticky;
+    height: 100vh;
     top: 0;
+    background-size: cover;
     padding: 2em;
     text-align: right;
 }
