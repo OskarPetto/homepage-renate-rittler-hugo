@@ -99,6 +99,7 @@ h1 {
 
 #gallery .card-footer {
     background-color: white;
+    text-align: center;
 }
 
 #gallery .card-columns {
@@ -114,7 +115,15 @@ h1 {
 
 #painting-size, .painting-size {
     opacity: 0.5;
-    float: right;
+    margin-bottom: .5rem;
+}
+
+.card-footer p {
+    margin-bottom: .5rem;
+}
+
+#image-modal p {
+    margin-bottom: .5rem;
 }
 
 @media (min-width: 836px) {
