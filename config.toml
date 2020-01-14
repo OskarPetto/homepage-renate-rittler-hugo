@@ -4,6 +4,7 @@ title = "Renate Rittler"
 theme = "artist"
 
 [params]
+    logo = "images/logo.svg"
     aboutImage = "images/me.jpg"
     bannerImage = "images/banner3.jpg"
     sidebarImage = "images/background.jpg"
