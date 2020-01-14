@@ -18,17 +18,17 @@
 
 .card-columns {
     column-count: 1;
-    max-width: 1800px;
+    max-width: 1578px;
     margin: auto;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 820px) {
     .card-columns {
         column-count: 2;
     }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1280px) {
     .card-columns {
         column-count: 3;
     }
