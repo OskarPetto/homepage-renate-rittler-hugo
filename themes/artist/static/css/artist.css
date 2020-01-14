@@ -97,44 +97,45 @@ h1 {
 
 /* List  */
 
-.gallery {
+#gallery {
     padding: 1rem;
 }
 
 @media (max-width: 576px) { 
 
-    .gallery {
+    #gallery {
         padding-left: 0;
         padding-right: 0;
     }
 
 }
 
-.card-footer {
+#gallery .card-footer {
     text-align: center;
+    background-color: white;
 }
 
-.card-columns {
+#gallery .card-columns {
     column-count: 1;
     max-width: 1578px;
     margin: auto;
 }
 
 @media (min-width: 820px) {
-    .card-columns {
+    #gallery .card-columns {
         column-count: 2;
     }
 }
 
 @media (min-width: 1280px) {
-    .card-columns {
+    #gallery .card-columns {
         column-count: 3;
     }
 }
 
 /* Modal  */
 
-.modal-header {
+#image-modal .modal-header {
     border-bottom: 0 none;
 }
 
