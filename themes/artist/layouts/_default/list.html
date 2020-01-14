@@ -9,13 +9,12 @@
                     <div class="card shadow-sm">
                         {{ $image := .Resources.GetMatch .Params.image}}
                         {{ $resizedImage := $image.Resize "500x" }}
-                        <img class="card-img img-fluid" src="{{ $resizedImage.RelPermalink }}"
+                        <img class="card-img-top img-fluid" src="{{ $resizedImage.RelPermalink }}"
                             data-src="{{ $image.RelPermalink }}" alt="{{.Title}}" title="{{.Title}}"
                             onclick="showModal(this)">
                         <div class="card-footer">
-                            <h4 class="painting-title">{{.Title}}</h4>
-                            <p class="painting-info">{{.Params.year}} &middot; {{.Params.technique}} &middot;
-                                {{.Params.size}}</p>
+                            <h4><b class="painting-title">{{.Title}}, </b><span  class="painting-year">{{.Params.year}}</span></h4>
+                            <p><span class="painting-technique">{{.Params.technique}}</span><span class="painting-size">{{.Params.size}}</span> </p>
                         </div>
                     </div>
 

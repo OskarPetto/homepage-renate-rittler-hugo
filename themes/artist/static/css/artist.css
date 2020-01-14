@@ -8,15 +8,18 @@ h1 {
     font-size: 4rem;
 }
 
-.about-me {
+.about-text {
     padding-bottom: 1rem;
 }
 
 /* sidebar-menu */
 
+
 .sidebar-menu {
     position: absolute;
     right: 20px;
+    /* For smooth scrolling on mobile because bottom is not constant */
+    top: 110px;
 
     -webkit-animation: fadein 1.6s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1.6s; /* Firefox < 16 */
@@ -25,16 +28,10 @@ h1 {
             animation: fadein 1.6s;
 }
 
-/* For smooth scrolling on mobile because bottom is not constant */
-@media (max-device-width: 576px) { 
-    .sidebar-menu {
-        top: 110px;
-    }
-}
-
 @media (min-device-width: 576px) { 
     .sidebar-menu {
         bottom: 8vh;
+        top: unset;
     }
 }
 
@@ -55,7 +52,6 @@ h1 {
 .sidebar-menu li {
     padding-bottom: 1vh;
 }
-
 
 @keyframes fadein {
     from { opacity: 0; right: 60px; }
@@ -90,7 +86,6 @@ h1 {
 
 #gallery {
     padding: 1rem;
-    background-color: #F8F8F8;
 }
 
 @media (max-width: 576px) { 
@@ -103,14 +98,18 @@ h1 {
 }
 
 #gallery .card-footer {
-    text-align: center;
     background-color: white;
 }
 
 #gallery .card-columns {
     column-count: 1;
-    max-width: 1546px;
+    max-width: 1540px;
     margin: auto;
+}
+
+#painting-size, .painting-size {
+    opacity: 0.5;
+    float: right;
 }
 
 @media (min-width: 836px) {

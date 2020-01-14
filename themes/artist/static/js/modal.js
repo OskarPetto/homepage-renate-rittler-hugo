@@ -29,7 +29,9 @@ function showModal(image) {
     const card = $(image).parent();
 
     $("#painting-title").text(card.find(".painting-title").text());
-    $("#painting-info").text(card.find(".painting-info").text());
+    $("#painting-year").text(card.find(".painting-year").text());
+    $("#painting-technique").text(card.find(".painting-technique").text());
+    $("#painting-size").text(card.find(".painting-size").text());
 
     $('#image-modal').modal('show')
 }

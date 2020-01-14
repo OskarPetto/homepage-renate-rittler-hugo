@@ -8,9 +8,9 @@
             </div>
             <div class="modal-body">
                 <img id="modal-image" class="rounded w-100" src="" alt="{{.Title}}" title="{{.Title}}">
-                <div class="container pt-3 text-center">
-                    <h4 id="painting-title"></h4>
-                    <p id="painting-info"></p>
+                <div class="container-fluid pt-3">
+                    <h4><b id="painting-title">{{.Title}}, </b><span  id="painting-year">{{.Params.year}}</span></h4>
+                    <p><span id="painting-technique">{{.Params.technique}}</span><span id="painting-size">{{.Params.size}}</span> </p>
                 </div>
             </div>
 
