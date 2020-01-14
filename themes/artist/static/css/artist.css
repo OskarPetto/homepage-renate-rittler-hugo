@@ -107,6 +107,11 @@ h1 {
     margin: auto;
 }
 
+#painting-title, .painting-title {
+    font-weight: bolder;
+    font-style: italic;
+}
+
 #painting-size, .painting-size {
     opacity: 0.5;
     float: right;
