@@ -137,3 +137,7 @@ h1 {
 .modal-header {
     border-bottom: 0 none;
 }
+
+#image-modal {
+    padding-right: 0 !important;
+}
