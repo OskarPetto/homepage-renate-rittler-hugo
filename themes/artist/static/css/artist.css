@@ -28,7 +28,7 @@ h1 {
     text-align: right;
     position: relative;
     right: 20px;
-    bottom: 90px;
+    top: -90px;
     
     /* For smooth scrolling on mobile because bottom is not constant */
     -webkit-animation: fadein 1.6s; /* Safari, Chrome and Opera > 12.1 */
@@ -37,6 +37,13 @@ h1 {
          -o-animation: fadein 1.6s; /* Opera < 12.1 */
             animation: fadein 1.6s;
 }
+
+@media (min-device-width: 576px) {
+    .sidebar-content {
+        bottom: 90px;
+        top: unset;
+    }
+  }
 
 .sidebar-content a {
     color: inherit;
