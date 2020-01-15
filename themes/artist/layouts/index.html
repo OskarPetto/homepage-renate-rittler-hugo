@@ -15,7 +15,10 @@
                 <q >{{.Params.quote }}</q><br>- {{ .Params.author }}
                 </div>
             </div>
-
+        </div>
+        <div class="col-2 pt-3">
+            <img class="img-fluid" src="{{.Site.Params.logo}}" alt="Logo von {{ .Site.Params.forname }} {{ .Site.Params.surname }}"
+                title="Logo von {{ .Site.Params.forname }} {{ .Site.Params.surname }}">
         </div>
     </div>
     <div class="row pt-3">
