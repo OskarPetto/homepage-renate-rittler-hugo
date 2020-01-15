@@ -6,22 +6,31 @@ body {
 
 h1 {
     font-size: 4rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .about-text {
-    padding-bottom: 1rem;
+    max-width: 500px;
 }
 
-/* sidebar-menu */
+/* sidebar */
 
-
-.sidebar-menu {
-    font-family: 'Roboto Condensed', sans-serif; 
+.sidebar-container {
     position: absolute;
-    right: 20px;
-    /* For smooth scrolling on mobile because bottom is not constant */
-    top: 110px;
+    width: 100%;
+    bottom: 0;
+}
 
+.sidebar-content {
+    font-family: 'Roboto Condensed', sans-serif; 
+    color: white !important;
+    text-align: right;
+    position: relative;
+    right: 20px;
+    bottom: 90px;
+    
+    /* For smooth scrolling on mobile because bottom is not constant */
     -webkit-animation: fadein 1.6s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1.6s; /* Firefox < 16 */
         -ms-animation: fadein 1.6s; /* Internet Explorer */
@@ -29,29 +38,22 @@ h1 {
             animation: fadein 1.6s;
 }
 
-@media (min-device-width: 576px) { 
-    .sidebar-menu {
-        bottom: 8vh;
-        top: unset;
-    }
-}
-
-.sidebar-menu h1 {
-    color: white;
+.sidebar-content a {
+    color: inherit;
     padding-bottom: 3vh;
 }
 
-.sidebar-menu a {
-    color: white;
-    padding-bottom: 3vh;
-}
-
-.sidebar-menu ul {
+.sidebar-content ul {
     list-style-type: none;
 }
 
-.sidebar-menu li {
-    padding-bottom: 1vh;
+.sidebar-content li {
+    padding-bottom: 15px;
+}
+
+.sidebar-content i {
+    font-size: 3rem;
+    margin-left: 10px;
 }
 
 @keyframes fadein {

@@ -7,12 +7,13 @@ theme = "artist"
     logo = "images/logo.svg"
     aboutImage = "images/me.jpg"
     bannerImage = "images/banner3.jpg"
-    sidebarImageMobile = "images/background414x589.jpg"
+    sidebarImageMobile = "images/backgroundMobile.jpg"
     sidebarImage1080p = "images/background300x1080.jpg"
     sidebarImage1440p = "images/background400x1440.jpg"
     sidebarImage2160p = "images/background600x2160.jpg"
     forname = "Renate"
     surname = "Rittler"
+    email = "dummy@mail.com"
 
 [[menu.main]]
     name = "Über mich"
@@ -33,8 +34,3 @@ theme = "artist"
     name = "Zeichnungen"
     url = "drawn"
     weight = -80
-
-[[menu.main]]
-    name = "Kontakt"
-    url = "contact"
-    weight = -70
