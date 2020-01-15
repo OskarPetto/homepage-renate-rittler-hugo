@@ -13,14 +13,12 @@
                             data-src="{{ $image.RelPermalink }}" alt="{{.Title}}" title="{{.Title}}"
                             onclick="showModal(this)">
                         <div class="card-footer">
-                            <h4>
-                                <span class="painting-title">{{.Title}}, </span>
-                                <span class="painting-year">{{.Params.year}}</span>
-                            </h4>
-                            <p>
-                                <span class="painting-technique">{{.Params.technique}},</span>
-                                <span class="painting-size"> {{.Params.size}}</span> 
-                            </p>
+                            <div class="painting-plaque">
+                                    <span class="painting-title">{{.Title}}, </span>
+                                    <span class="painting-year">{{.Params.year}}</span><br>
+                                    <span class="painting-technique">{{.Params.technique}}</span>
+                                    <span class="painting-size"> {{.Params.size}}</span>
+                            </div>
                         </div>
                     </div>
 

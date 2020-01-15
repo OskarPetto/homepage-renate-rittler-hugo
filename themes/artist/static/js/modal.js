@@ -28,10 +28,7 @@ function showModal(image) {
 
     const card = $(image).parent();
 
-    $("#painting-title").text(card.find(".painting-title").text());
-    $("#painting-year").text(card.find(".painting-year").text());
-    $("#painting-technique").text(card.find(".painting-technique").text());
-    $("#painting-size").text(card.find(".painting-size").text());
+    $("#painting-plaque").html(card.find(".painting-plaque").html());
 
     $('#image-modal').modal('show')
 }

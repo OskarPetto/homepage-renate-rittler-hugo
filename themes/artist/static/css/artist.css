@@ -99,7 +99,7 @@ h1 {
 
 #gallery .card-footer {
     background-color: white;
-    text-align: center;
+    justify-content: center;
 }
 
 #gallery .card-columns {
@@ -108,14 +108,28 @@ h1 {
     margin: auto;
 }
 
-#painting-title, .painting-title {
+#painting-plaque, .painting-plaque {
+    text-align: left;
+}
+
+#painting-plaque {
+    padding: .75rem 1.25rem;
+}
+
+.painting-title {
+    font-size: 1.5rem;
     font-weight: bolder;
     font-style: italic;
 }
 
-#painting-size, .painting-size {
+.painting-year {
+    font-size: 1.5rem;
+}
+
+.painting-size {
     opacity: 0.5;
     margin-bottom: .5rem;
+    float: right;
 }
 
 .card-footer p {
@@ -140,10 +154,10 @@ h1 {
 
 /* Modal  */
 
-#image-modal .modal-header {
-    border-bottom: 0 none;
-}
-
 #image-modal {
     padding-right: 0 !important;
+}
+
+#image-modal .modal-header {
+    border-bottom: 0 none;
 }
