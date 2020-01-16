@@ -48,6 +48,13 @@
     }
   }
 
+  @media (min-device-width: 576px) and (max-device-height: 768px) {
+    .sidebar {
+      background: url("{{ .Site.Params.sidebarImage768p | relURL }}");
+    }
+
+  }
+
   @media (min-device-width: 1921px) {
     .sidebar {
       width: 400px;
