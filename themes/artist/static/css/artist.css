@@ -18,7 +18,7 @@ h1 {
 
 .sidebar-container {
     position: relative;
-    top: 13rem;
+    top: 1rem;
 }
 
 @media (min-device-width: 576px) {
@@ -26,7 +26,7 @@ h1 {
         position: absolute;
         width: 100%;
         top: unset;
-        bottom: 0;
+        bottom: 6rem;
     }
 }
 
@@ -36,7 +36,6 @@ h1 {
     text-align: right;
     position: relative;
     right: 1rem;
-    bottom: 6rem;
     
     /* For smooth scrolling on mobile because bottom is not constant */
     -webkit-animation: fadein 1.6s; /* Safari, Chrome and Opera > 12.1 */
@@ -139,17 +138,9 @@ h1 {
 
 .painting-size {
     opacity: 0.5;
-    margin-bottom: .5rem;
     float: right;
 }
 
-.card-footer p {
-    margin-bottom: .5rem;
-}
-
-#image-modal p {
-    margin-bottom: .5rem;
-}
 
 @media (min-width: 836px) {
     #gallery .card-columns {
