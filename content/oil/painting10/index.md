@@ -1,5 +1,5 @@
 ---
-title: "Painting10"
+title: "The Sphere of Love"
 year: 2010
 size: "160x80cm"
 image: "painting10.jpg"

@@ -1,5 +1,5 @@
 ---
-title: "Painting4"
+title: "Idea of Peace 11-18th April"
 year: 2009
 size: "160x80cm"
 image: "painting4.jpg"

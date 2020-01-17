@@ -1,5 +1,5 @@
 ---
-title: "Painting3"
+title: "Sensetive Head"
 year: 1999
 size: "160x80cm"
 image: "painting3.jpg"

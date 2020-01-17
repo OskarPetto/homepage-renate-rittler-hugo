@@ -1,5 +1,9 @@
 ---
-title: "Über mich"
+title: Über mich
+menu: main
+url: ""
+name: Über mich
+weight: -110
 author: Pablo Picasso
 quote: Computers are useless. They can only give you answers.
 ---

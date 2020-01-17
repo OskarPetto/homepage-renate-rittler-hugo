@@ -1,5 +1,5 @@
 ---
-title: "Painting8"
+title: "The Sky of Innocence"
 year: 1999
 size: "160x80cm"
 image: "painting8.jpg"

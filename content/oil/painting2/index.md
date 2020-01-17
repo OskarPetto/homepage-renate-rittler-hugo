@@ -1,5 +1,5 @@
 ---
-title: "Painting2"
+title: "Fragment of Linear Air"
 year: 2010
 size: "160x80cm"
 image: "painting2.jpg"

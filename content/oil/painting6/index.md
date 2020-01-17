@@ -1,5 +1,5 @@
 ---
-title: "Painting6"
+title: "Shimmering Limitation"
 year: 2004
 size: "160x80cm"
 image: "painting6.jpg"

@@ -1,5 +1,5 @@
 ---
-title: "Painting7"
+title: "Incoherent Energy"
 year: 1999
 size: "160x80cm"
 image: "painting7.jpg"
