@@ -41,6 +41,7 @@ i {
     position: relative;
     display: none;
     right: 1rem;
+
     /* For smooth scrolling on mobile because bottom is not constant */
     -webkit-animation: fadein 1.6s;
     /* Safari, Chrome and Opera > 12.1 */
@@ -69,6 +70,16 @@ i {
 
     .sidebar-content {
         display: block;
+        /* For smooth scrolling on mobile because bottom is not constant */
+        -webkit-animation: fadein 1.6s, slideright 1.6s;;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 1.6s, slideright 1.6s;;
+        /* Firefox < 16 */
+        -ms-animation: fadein 1.6s, slideright 1.6s;;
+        /* Internet Explorer */
+        -o-animation: fadein 1.6s, slideright 1.6s;;
+        /* Opera < 12.1 */
+        animation: fadein 1.6s, slideright 1.6s;;
     }
 }
 
@@ -91,11 +102,9 @@ i {
 @keyframes fadein {
     from {
         opacity: 0;
-        right: 4rem;
     }
     to {
         opacity: 1;
-        right: 1rem;
     }
 }
 
@@ -104,11 +113,9 @@ i {
 @-moz-keyframes fadein {
     from {
         opacity: 0;
-        right: 4rem;
     }
     to {
         opacity: 1;
-        right: 1rem;
     }
 }
 
@@ -117,11 +124,9 @@ i {
 @-webkit-keyframes fadein {
     from {
         opacity: 0;
-        right: 4rem;
     }
     to {
         opacity: 1;
-        right: 1rem;
     }
 }
 
@@ -130,11 +135,9 @@ i {
 @-ms-keyframes fadein {
     from {
         opacity: 0;
-        right: 4rem;
     }
     to {
         opacity: 1;
-        right: 1rem;
     }
 }
 
@@ -143,10 +146,62 @@ i {
 @-o-keyframes fadein {
     from {
         opacity: 0;
-        right: 4rem;
     }
     to {
         opacity: 1;
+    }
+}
+
+
+@keyframes slideright {
+    from {
+        right: 4rem;
+    }
+    to {
+        right: 1rem;
+    }
+}
+
+/* Firefox < 16 */
+
+@-moz-keyframes slideright {
+    from {
+        right: 4rem;
+    }
+    to {
+        right: 1rem;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+
+@-webkit-keyframes slideright {
+    from {
+        right: 4rem;
+    }
+    to {
+        right: 1rem;
+    }
+}
+
+/* Internet Explorer */
+
+@-ms-keyframes slideright {
+    from {
+        right: 4rem;
+    }
+    to {
+        right: 1rem;
+    }
+}
+
+/* Opera < 12.1 */
+
+@-o-keyframes slideright {
+    from {
+        right: 4rem;
+    }
+    to {
         right: 1rem;
     }
 }

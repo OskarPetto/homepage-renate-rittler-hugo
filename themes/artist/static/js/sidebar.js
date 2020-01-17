@@ -1,7 +1,7 @@
 
 function openSidebar() {
     $("#openSidebarButton").css({ "display": "none" });
-    $(".sidebar").css({ "transition": "width 0.4s" });
+    $(".sidebar").css({ "transition": "width 0.6s" });
     $(".sidebar").width(window.innerWidth);
     $(".sidebar").height(window.innerHeight);
     $(".sidebar-content").css({ "display": "block" });
