@@ -1,7 +1,9 @@
 <!-- sidebar start -->
+<button id="openSidebarButton" class="btn d-sm-none" onclick="openSidebar()"><i class="fas fa-bars"></i></button>
 <header class="sidebar">
   <div class="sidebar-container">
     <div class="sidebar-content">
+      <a class="d-sm-none" onclick="closeSidebar()"><i class="fas fa-times"></i></a>
       <a href="{{ .Site.BaseURL }}">
         <h1>{{ .Site.Params.forname }}<br>{{ .Site.Params.surname }}</h1>
       </a>
@@ -17,29 +19,20 @@
           {{ end }}
         </ul>
       </nav>
-      <a href="mailto:{{.Site.Params.email}}"><i class="fa fa-envelope"></i></a> 
+      <a href="mailto:{{.Site.Params.email}}"><i class="fa fa-envelope"></i></a>
       <i class="fab fa-instagram"></i>
     </div>
 
   </div>
-
 </header>
 <style>
-  /* To enable hugo templates */
   .sidebar {
-    width: 100vw;
     background: url("{{ .Site.Params.sidebarImageMobile | relURL }}");
-    top: 0;
-    background-size: cover;
   }
 
   @media (min-device-width: 576px) {
     .sidebar {
-      height: 100vh;
       width: 300px;
-      position: sticky;
-      position: -webkit-sticky;
-      float: left;
       background: url("{{ .Site.Params.sidebarImage1080p | relURL }}");
     }
 
@@ -77,9 +70,3 @@
     }
   }
 </style>
-<script>
-  // For smooth scrolling on mobile because 100vh is not constant 
-  if (window.innerWidth < 576) {
-    $('.sidebar').css({ 'height': window.innerHeight * 0.8});
-  }
-</script>

@@ -14,35 +14,63 @@ h1 {
     max-width: 500px;
 }
 
+i {
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
 /* sidebar */
+
+/* To enable hugo templates */
+
+.sidebar {
+    width: 0;
+    height: 0;
+    top: 0;
+    background-size: cover;
+}
 
 .sidebar-container {
     position: relative;
     top: 1rem;
 }
 
+.sidebar-content {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white !important;
+    text-align: right;
+    position: relative;
+    display: none;
+    right: 1rem;
+    /* For smooth scrolling on mobile because bottom is not constant */
+    -webkit-animation: fadein 1.6s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1.6s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 1.6s;
+    /* Internet Explorer */
+    -o-animation: fadein 1.6s;
+    /* Opera < 12.1 */
+    animation: fadein 1.6s;
+}
+
 @media (min-device-width: 576px) {
+    .sidebar {
+        height: 100vh;
+        position: sticky;
+        position: -webkit-sticky;
+        float: left;
+    }
     .sidebar-container {
         position: absolute;
         width: 100%;
         top: unset;
         bottom: 6rem;
     }
-}
 
-.sidebar-content {
-    font-family: 'Roboto Condensed', sans-serif; 
-    color: white !important;
-    text-align: right;
-    position: relative;
-    right: 1rem;
-    
-    /* For smooth scrolling on mobile because bottom is not constant */
-    -webkit-animation: fadein 1.6s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1.6s; /* Firefox < 16 */
-        -ms-animation: fadein 1.6s; /* Internet Explorer */
-         -o-animation: fadein 1.6s; /* Opera < 12.1 */
-            animation: fadein 1.6s;
+    .sidebar-content {
+        display: block;
+    }
 }
 
 .sidebar-content a {
@@ -57,38 +85,67 @@ h1 {
     padding-bottom: 15px;
 }
 
-.sidebar-content i {
-    font-size: 3rem;
-    margin-left: 1rem;
-}
-
 @keyframes fadein {
-    from { opacity: 0; right: 4rem; }
-    to   { opacity: 1; right: 1rem; }
+    from {
+        opacity: 0;
+        right: 4rem;
+    }
+    to {
+        opacity: 1;
+        right: 1rem;
+    }
 }
 
 /* Firefox < 16 */
+
 @-moz-keyframes fadein {
-    from { opacity: 0; right: 4rem; }
-    to   { opacity: 1; right: 1rem; }
+    from {
+        opacity: 0;
+        right: 4rem;
+    }
+    to {
+        opacity: 1;
+        right: 1rem;
+    }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
+
 @-webkit-keyframes fadein {
-    from { opacity: 0; right: 4rem; }
-    to   { opacity: 1; right: 1rem; }
+    from {
+        opacity: 0;
+        right: 4rem;
+    }
+    to {
+        opacity: 1;
+        right: 1rem;
+    }
 }
 
 /* Internet Explorer */
+
 @-ms-keyframes fadein {
-    from { opacity: 0; right: 4rem; }
-    to   { opacity: 1; right: 1rem; }
+    from {
+        opacity: 0;
+        right: 4rem;
+    }
+    to {
+        opacity: 1;
+        right: 1rem;
+    }
 }
 
 /* Opera < 12.1 */
+
 @-o-keyframes fadein {
-    from { opacity: 0; right: 4rem; }
-    to   { opacity: 1; right: 1rem; }
+    from {
+        opacity: 0;
+        right: 4rem;
+    }
+    to {
+        opacity: 1;
+        right: 1rem;
+    }
 }
 
 /* List  */
@@ -97,13 +154,11 @@ h1 {
     padding: 1rem;
 }
 
-@media (max-width: 576px) { 
-
+@media (max-width: 576px) {
     #gallery {
         padding-left: 0;
         padding-right: 0;
     }
-
 }
 
 #gallery .card-footer {
@@ -140,7 +195,6 @@ h1 {
     opacity: 0.5;
     float: right;
 }
-
 
 @media (min-width: 836px) {
     #gallery .card-columns {
