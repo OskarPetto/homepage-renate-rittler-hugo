@@ -18,9 +18,13 @@ i {
     font-size: 3rem;
 }
 
-/* sidebar */
+.top-title {
+    float: right;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
 
-/* To enable hugo templates */
+/* sidebar */
 
 .sidebar {
     width: 100vw;

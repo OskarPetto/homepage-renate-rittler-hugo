@@ -1,14 +1,19 @@
 <!-- sidebar start -->
 <header id="accordion">
-  <div id="menuButton" class="collapse show" data-parent="#accordion">
-    <button class="btn d-block d-sm-none" data-toggle="collapse" data-target="#collapsingSidebar" aria-expanded="true" aria-controls="sidebar"><i
+  <div id="collapsingHeader" class="collapse show d-sm-none" data-parent="#accordion">
+    <button class="btn d-inline" data-toggle="collapse" data-target="#collapsingSidebar" aria-expanded="true" aria-controls="collapsingSidebar"><i
       class="fas fa-bars"></i></button>
+      <div class="top-title">
+        <span class="painting-title">
+          {{ .Title }}
+        </span>
+      </div>
   </div>
   <div id="collapsingSidebar" class="collapse dont-collapse-sm" data-parent="#accordion">
     <div class="sidebar">
       <div class="sidebar-container">
         <div class="sidebar-content">
-          <a class="d-sm-none" data-toggle="collapse" data-target="#menuButton" aria-expanded="false" aria-controls="menuButton"><i class="fas fa-times"></i></a>
+          <a class="d-sm-none" data-toggle="collapse" data-target="#collapsingHeader" aria-expanded="false" aria-controls="collapsingHeader"><i class="fas fa-times"></i></a>
           <a href="{{ .Site.BaseURL }}">
             <h1>{{ .Site.Params.forname }}<br>{{ .Site.Params.surname }}</h1>
           </a>
