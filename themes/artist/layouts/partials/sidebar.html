@@ -1,28 +1,35 @@
 <!-- sidebar start -->
-<button id="openSidebarButton" class="btn d-sm-none" onclick="openSidebar()"><i class="fas fa-bars"></i></button>
-<header class="sidebar">
-  <div class="sidebar-container">
-    <div class="sidebar-content">
-      <a class="d-sm-none" onclick="closeSidebar()"><i class="fas fa-times"></i></a>
-      <a href="{{ .Site.BaseURL }}">
-        <h1>{{ .Site.Params.forname }}<br>{{ .Site.Params.surname }}</h1>
-      </a>
-      <nav>
-        <ul>
-          {{ $currentPage := . }}
-          {{ range .Site.Menus.main }}
-          <li>
-            <a href="{{ .URL | relURL }}">
-              <h4>{{ .Name }}</h4>
-            </a>
-          </li>
-          {{ end }}
-        </ul>
-      </nav>
-      <a href="mailto:{{.Site.Params.email}}"><i class="fa fa-envelope"></i></a>
-      <i class="fab fa-instagram"></i>
+<header id="accordion">
+  <div id="menuButton" class="collapse show" data-parent="#accordion">
+    <button class="btn d-block d-sm-none" data-toggle="collapse" data-target="#collapsingSidebar" aria-expanded="true" aria-controls="sidebar"><i
+      class="fas fa-bars"></i></button>
+  </div>
+  <div id="collapsingSidebar" class="collapse dont-collapse-sm" data-parent="#accordion">
+    <div class="sidebar">
+      <div class="sidebar-container">
+        <div class="sidebar-content">
+          <a class="d-sm-none" data-toggle="collapse" data-target="#menuButton" aria-expanded="false" aria-controls="menuButton"><i class="fas fa-times"></i></a>
+          <a href="{{ .Site.BaseURL }}">
+            <h1>{{ .Site.Params.forname }}<br>{{ .Site.Params.surname }}</h1>
+          </a>
+          <nav>
+            <ul>
+              {{ $currentPage := . }}
+              {{ range .Site.Menus.main }}
+              <li>
+                <a href="{{ .URL | relURL }}">
+                  <h4>{{ .Name }}</h4>
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </nav>
+          <a href="mailto:{{.Site.Params.email}}"><i class="fa fa-envelope"></i></a>
+          <i class="fab fa-instagram"></i>
+        </div>
+  
+      </div>
     </div>
-
   </div>
 </header>
 <style>
