@@ -1,7 +1,7 @@
 {{define "main"}}
 <div class="container">
     <div class="row pt-3 justify-content-center">
-        <div class="col-lg-4  text-center">
+        <div class="col-lg-4 px-0 px-sm-3 text-center">
             <img class="img-fluid" src="{{.Site.Params.aboutImage | relURL}}" alt="Portrait von {{ .Site.Params.forname }} {{ .Site.Params.surname }}"
             title="Portrait von {{ .Site.Params.forname }} {{ .Site.Params.surname }}">
         </div>
@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class="row pt-3">
-        <div class="col">
+        <div class="col px-0 px-sm-3">
             <img class="img-fluid" src="{{.Site.Params.bannerImage | relURL}}" alt="Banner von {{ .Site.Params.forname }} {{ .Site.Params.surname }}"
                 title="Banner von {{ .Site.Params.forname }} {{ .Site.Params.surname }}">
         </div>
