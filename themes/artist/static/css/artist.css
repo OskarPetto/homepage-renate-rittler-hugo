@@ -16,7 +16,6 @@ h1 {
 
 i {
     font-size: 3rem;
-    margin-left: 1rem;
 }
 
 /* sidebar */
@@ -83,6 +82,10 @@ i {
 
 .sidebar-content li {
     padding-bottom: 15px;
+}
+
+.sidebar-content i {
+    margin-left: 1rem;
 }
 
 @keyframes fadein {
