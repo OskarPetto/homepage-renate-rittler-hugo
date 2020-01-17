@@ -57,8 +57,7 @@ i {
     .sidebar-container {
         position: absolute;
         width: 100%;
-        top: unset;
-        bottom: 6rem;
+        bottom: 8rem;
     }
 
     .dont-collapse-sm {
