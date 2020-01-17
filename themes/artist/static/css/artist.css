@@ -8,6 +8,8 @@ h1 {
     font-size: 4rem;
     padding-bottom: 1rem;
     padding-top: 1rem;
+    font-style: italic;
+    font-weight: bolder;
 }
 
 .about-text {
@@ -40,16 +42,15 @@ i {
     position: relative;
     top: 1rem;
     right: 1rem;
-
-        -webkit-animation: slideright 1.6s;
-        /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: slideright 1.6s;
-        /* Firefox < 16 */
-        -ms-animation: slideright 1.6s;
-        /* Internet Explorer */
-        -o-animation: slideright 1.6s;
-        /* Opera < 12.1 */
-        animation: slideright 1.6s;
+    -webkit-animation: slideright 1.6s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: slideright 1.6s;
+    /* Firefox < 16 */
+    -ms-animation: slideright 1.6s;
+    /* Internet Explorer */
+    -o-animation: slideright 1.6s;
+    /* Opera < 12.1 */
+    animation: slideright 1.6s;
 }
 
 @media (min-device-width: 576px) {
@@ -63,7 +64,6 @@ i {
         width: 100%;
         bottom: 8rem;
     }
-
     .dont-collapse-sm {
         display: inline !important;
     }
@@ -160,7 +160,6 @@ i {
         padding-right: 0;
         padding-bottom: 0;
     }
-
     #gallery .card {
         border: 0px;
         margin: 0;
