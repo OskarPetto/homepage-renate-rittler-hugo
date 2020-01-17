@@ -6,9 +6,8 @@ body {
 
 h1 {
     font-size: 4rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    font-style: italic;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     font-weight: bolder;
 }
 
@@ -22,8 +21,10 @@ i {
 
 .top-title {
     float: right;
-    padding-top: 1rem;
-    padding-right: 1rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
 }
 
 /* sidebar */
@@ -78,11 +79,20 @@ i {
 }
 
 .sidebar-content li {
-    padding-bottom: 15px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar-content .current {
+    font-weight: bolder;
 }
 
 .sidebar-content i {
     margin-left: 1rem;
+}
+
+.menu-item {
+    font-size: 1.5rem;
 }
 
 @keyframes slideright {
@@ -151,14 +161,14 @@ i {
 /* List  */
 
 #gallery {
-    padding: 1rem;
+    margin: 1rem;
 }
 
 @media (max-width: 576px) {
     #gallery {
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
     }
     #gallery .card {
         border: 0px;
@@ -179,7 +189,7 @@ i {
 
 #painting-plaque, .painting-plaque {
     text-align: left;
-    padding-bottom: .5rem;
+    margin-bottom: .5rem;
 }
 
 #painting-plaque {
@@ -216,7 +226,7 @@ i {
 /* Modal  */
 
 #image-modal {
-    padding-right: 0 !important;
+    margin-right: 0 !important;
 }
 
 #image-modal .modal-header {

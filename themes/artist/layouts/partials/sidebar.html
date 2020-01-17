@@ -4,9 +4,7 @@
     <button class="btn d-inline" data-toggle="collapse" data-target="#collapsingSidebar" aria-expanded="true" aria-controls="collapsingSidebar"><i
       class="fas fa-bars"></i></button>
       <div class="top-title">
-        <span class="painting-title">
-          {{ .Title }}
-        </span>
+        {{ .Title }}
       </div>
   </div>
   <div id="collapsingSidebar" class="collapse dont-collapse-sm" data-parent="#accordion">
@@ -21,9 +19,9 @@
             <ul>
               {{ $currentPage := . }}
               {{ range .Site.Menus.main }}
-              <li>
-                <a href="{{ .URL | relURL }}">
-                  <h4>{{ .Name }}</h4>
+              <li class="{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}current{{ end }}">
+                <a href="{{ .URL }}">
+                  <span class="menu-item">{{ .Name }}</span>
                 </a>
               </li>
               {{ end }}

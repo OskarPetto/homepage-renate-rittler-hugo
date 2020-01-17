@@ -15,23 +15,3 @@ theme = "artist"
     forname = "Renate"
     surname = "Rittler"
     email = "dummy@mail.com"
-
-[[menu.main]]
-    name = "Über mich"
-    url = ""
-    weight = -110
-
-[[menu.main]]
-    name = "Ölbilder"
-    url = "oil"
-    weight = -100
-
-[[menu.main]]
-    name = "Mischtechnik"
-    url = "mixed"
-    weight = -90
-
-[[menu.main]]
-    name = "Zeichnungen"
-    url = "drawn"
-    weight = -80
