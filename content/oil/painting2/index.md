@@ -1,9 +1,8 @@
 ---
-title: "Fragment of Linear Air"
-year: 2010
-size: "160x80cm"
-image: "painting2.jpg"
-technique: "Öl auf Leinwand"
+title: "Hitze I"
+year: 2017
+size: "80x120cm"
+image: "hitze1.jpg"
+technique: "Öl auf Baumwolle"
 draft: false
 ---
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.

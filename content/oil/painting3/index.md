@@ -1,9 +1,8 @@
 ---
-title: "Sensetive Head"
-year: 1999
-size: "160x80cm"
-image: "painting3.jpg"
-technique: "Öl auf Leinwand"
+title: "Tanz auf dem Vulkan"
+year: 2018
+size: "60x80cm"
+image: "tanz_auf_dem_vulkan.jpg"
+technique: "Öl auf Baumwolle"
 draft: false
 ---
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam

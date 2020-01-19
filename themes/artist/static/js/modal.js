@@ -4,7 +4,7 @@ function scaleModalTo(width, height) {
     const ratio = width / height;
 
     // for modal header and footer
-    const maxModalHeight = window.innerHeight - 220;
+    const maxModalHeight = window.innerHeight - 230;
 
     const maxHeight = Math.min(height, maxModalHeight);
 

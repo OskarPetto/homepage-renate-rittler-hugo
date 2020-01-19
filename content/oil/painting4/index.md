@@ -1,9 +1,8 @@
 ---
-title: "Idea of Peace 11-18th April"
-year: 2009
-size: "160x80cm"
-image: "painting4.jpg"
-technique: "Öl auf Leinwand"
+title: "Gestrandet"
+year: 2018
+size: "60x50cm"
+image: "gestrandet.jpg"
+technique: "Öl auf Baumwolle"
 draft: false
 ---
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
