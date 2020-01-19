@@ -1,30 +1,29 @@
 {{define "main"}}
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row pt-3">
+        <div class="col">
+            <img class="img-fluid" src="{{.Site.Params.bannerImage | relURL}}" alt="Banner von {{ .Site.Params.forname }} {{ .Site.Params.surname }}"
+                title="Banner von {{ .Site.Params.forname }} {{ .Site.Params.surname }}">
+        </div>
+    </div>
+    <div class="row pt-3 justify-content-center">
         <div class="col-lg-6">
             <div class="about-text">
                 <h1 class="text-center">{{ .Site.Params.forname }}<br>{{ .Site.Params.surname }}</h1>
                 <div class="text-left">
                     {{ .Content }}
                 </div>
-                <div class="text-right">
-                <q >{{.Params.quote }}</q><br>- {{ .Params.author }}
-                </div>
             </div>
         </div>
-        <div class="col-lg-4 text-center pt-3">
+        <div class="col-lg-4 text-center">
             <img class="img-fluid" src="{{.Site.Params.aboutImage | relURL}}" alt="Portrait von {{ .Site.Params.forname }} {{ .Site.Params.surname }}"
             title="Portrait von {{ .Site.Params.forname }} {{ .Site.Params.surname }}">
-        </div>
-        <div class="col-lg-2 col-3 pt-3">
-            <img class="img-fluid" src="{{.Site.Params.logo}}" alt="Logo von {{ .Site.Params.forname }} {{ .Site.Params.surname }}"
-                title="Logo von {{ .Site.Params.forname }} {{ .Site.Params.surname }}">
-        </div>
-    </div>
-    <div class="row pt-3">
-        <div class="col px-0 px-sm-3">
-            <img class="img-fluid" src="{{.Site.Params.bannerImage | relURL}}" alt="Banner von {{ .Site.Params.forname }} {{ .Site.Params.surname }}"
-                title="Banner von {{ .Site.Params.forname }} {{ .Site.Params.surname }}">
+            <div class="text-left pt-3">
+                <q >{{.Params.quote }}</q>
+                </div>
+            <div class="text-right pb-3">
+                - {{ .Params.author }}
+                </div>
         </div>
     </div>
 </div>

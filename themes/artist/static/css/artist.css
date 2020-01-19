@@ -55,8 +55,7 @@ i {
 
 @media (min-device-width: 576px) {
     .sidebar {
-        position: sticky;
-        position: -webkit-sticky;
+        position: fixed;
         float: left;
     }
     .sidebar-container {
