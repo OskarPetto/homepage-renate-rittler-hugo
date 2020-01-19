@@ -9,7 +9,7 @@
                     <div class="card shadow-sm">
                         {{ $image := .Resources.GetMatch .Params.image}}
                         {{ $smallImage := $image.Resize "500x" }}
-                        {{ $bigImage := $image.Resize "2000x" }}
+                        {{ $bigImage := $image.Fit "2000x2000" }}
                         <img class="card-img-top img-fluid" src="{{ $smallImage.RelPermalink }}"
                             data-src="{{ $bigImage.RelPermalink }}" alt="{{.Title}}" title="{{.Title}}"
                             onclick="showModal(this)">
